@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+.signup-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: white;
+}
+
+.signup-slogan {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 3px;
+  opacity: 0.75;
+}
+
+.signup-wrapper {
+  display: grid;
+  grid-template-rows: 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5% 12.5%;
+  grid-row-gap: 0.7em;
+  justify-items: center;
+}
+
+input {
+  outline: none;
+}
+
+.signup-password {
+  font-weight: 300;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 17px;
+  display: flex;
+  width: 270px;
+  height: 28px;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-style: none;
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+
+::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: #29282d;
+  opacity: 0.7;
+}
+
+.signup-button:hover {
+  cursor: pointer;
+}
+
+.signup-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 288px;
+  height: 34px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 17px;
+}
+
+.signup-username {
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 17px;
+  display: flex;
+  width: 270px;
+  height: 28px;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-style: none;
+  border-radius: 2px;
+}
+
+.signup-fullname {
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 17px;
+  display: flex;
+  width: 270px;
+  height: 28px;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-style: none;
+  border-radius: 2px;
+}
+
+.signup-email {
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 17px;
+  display: flex;
+  width: 270px;
+  height: 28px;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-style: none;
+  border-radius: 2px;
+}
+
+.signup-login-text {
+  text-decoration: underline;
+}
+
+.signup-login-account {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 12px;
+}
+
+.signup-login-text:hover {
+  cursor: pointer;
+}

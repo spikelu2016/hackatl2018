@@ -1,0 +1,156 @@
+.main-container-bg-pic {
+  background: url('https://res.cloudinary.com/dclmhv0zu/image/upload/v1540671993/after2_by_drewhopper-dabvgpm.jpg');
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
+.main-container-wrapper {
+  display: flex;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+.login-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: white;
+}
+
+.login-wrapper {
+  display: grid;
+  grid-template-rows: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+  grid-row-gap: 0.7em;
+  justify-items: center;
+}
+
+input {
+  outline: none;
+}
+
+.login-password {
+  font-weight: 300;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 17px;
+  display: flex;
+  width: 270px;
+  height: 28px;
+  background-color: rgba(211, 211, 211, 0.8);
+  border-style: none;
+  border-radius: 2px;
+  margin-bottom: 4px;
+}
+
+::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: #29282d;
+  opacity: 0.7;
+}
+
+.login-button:hover {
+  cursor: pointer;
+}
+
+.login-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 288px;
+  height: 34px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 17px;
+}
+
+.login-username {
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 4px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 17px;
+  display: flex;
+  width: 270px;
+  height: 28px;
+  background-color: rgba(211, 211, 211, 0.8);
+  border-style: none;
+  border-radius: 2px;
+}
+
+.login-signup-text {
+  text-decoration: underline;
+}
+
+.login-signup-account {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 12px;
+}
+
+.login-signup-forgot-password {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 12px;
+}
+
+.login-signup-forgot-password:hover {
+  cursor: pointer;
+}
+
+.login-signup-text:hover {
+  cursor: pointer;
+}
+
+.main-container-overlay {
+  background-color: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.login-title {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: white;
+}
