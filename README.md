@@ -1,106 +1,61 @@
-<img src="https://raw.githubusercontent.com/flexdinesh/react-redux-boilerplate/master/app/components/Header/images/banner.jpg" alt="react redux boilerplate banner" align="center" />
+# React + Node Starter
+_for [Heroku](https://www.heroku.com/) deployment_
 
-<br />
+## Overview
 
-<div align="center">A minimal, beginner friendly React-Redux boilerplate with all the industry best practices</div>
+This is a simple starter to get you up and running for React projects. This is intended to provide:
 
-<br />
+* a lightweight webpack config (for development and production)
+* some helpful tooling for development workflow
+* a similar setup to what you'll see in the wild
+* Heroku-ready deployment setup
 
-<div align="center">
-  <!-- Dependency Status -->
-  <a href="https://david-dm.org/flexdinesh/react-redux-boilerplate">
-    <img src="https://david-dm.org/flexdinesh/react-redux-boilerplate.svg" alt="Dependency Status" />
-  </a>
-  <!-- devDependency Status -->
-  <a href="https://david-dm.org/flexdinesh/react-redux-boilerplate#info=devDependencies">
-    <img src="https://david-dm.org/flexdinesh/react-redux-boilerplate/dev-status.svg" alt="devDependency Status" />
-  </a>
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/flexdinesh/react-redux-boilerplate">
-    <img src="https://travis-ci.org/flexdinesh/react-redux-boilerplate.svg" alt="Build Status" />
-  </a>
-  <!-- Gitter -->
-  <a href="https://gitter.im/flexdinesh/react-redux-boilerplate">
-    <img src="https://camo.githubusercontent.com/54dc79dc7da6b76b17bc8013342da9b4266d993c/68747470733a2f2f6261646765732e6769747465722e696d2f6d78737462722f72656163742d626f696c6572706c6174652e737667" alt="Gitter Chat" />
-  </a>
-</div>
+## Running
 
-<br />
+Install dependencies: `$ npm install` or `$ yarn`
 
-<div align="center">
-  <sub>Created by <a href="https://twitter.com/flexdinesh">Dinesh Pandiyan</a></sub>
-</div>
+Fire up a development server: `$ npm run dev`
 
+Once the server is running, you can visit `http://localhost:3000/`
 
-## Why? [![start with why](https://img.shields.io/badge/start%20with-why%3F-brightgreen.svg?style=flat)](http://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action)
+## File layout
 
-The whole React community knows and will unanimously agree that [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate) is the ultimate starter template for kickstarting a React project. It's setup with all the industry best practices and standards. But it also has a lot more than what you just need to start a react-redux app. It took me quite some time to get my head around what was happening in the codebase and it's clearly not for starters. They quote this right in their readme,
+- **Frontend React**
+    - The top level application Container is in `frontend/containers/AppContainer.js`
+    - CSS styles are in `frontend/assets/stylesheets/base.scss`
+- **Backend Express**
+    - Entry point is `server.js`
+    - API routes are under `backend/routes.js`
+    - API routes are served under `http://localhost:3000/api`
 
-> Please note that this boilerplate is **production-ready and not meant for beginners**! If you're just starting out with react or redux, please refer to https://github.com/petehunt/react-howto instead. If you want a solid, battle-tested base to build your next product upon and have some experience with react, this is the perfect start for you.
+## Production Build
 
-So it involves a lot of additional learning curve to get started with [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate). That's why I forked it, stripped it down and made this _leaner, **beginner friendly**_ boilerplate without all the additional complexity.
+To build your production assets and run the server:
 
+```
+$ npm start
+```
 
-## Features
+## Deploying to Heroku
 
-This boilerplate features all the latest tools and practices in the industry.
+This app is set up for deployment to Heroku!
 
-- _React.js_ - **React 16**✨, React Router 5
-- _Redux.js_ - Redux saga, Redux immutable and Reselect
-- _Babel_ - ES6, ESNext, Airbnb and React/Recommended config
-- _Webpack_ - **Webpack 4**✨, Hot Reloading, Code Splitting, Optimized Prod Build and more
-- _Test_ - Jest with Enzyme
-- _Lint_ - ESlint
-- _Styles_ - SCSS Styling
+_This assumes you have already have a Heroku account and have the
+[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) installed_
 
-Here are a few highlights to look out for in this boilerplate 
+```
+$ heroku login
+$ heroku create -a name-of-your-app
+$ git push heroku master
+$ heroku open
+```
 
-<dl>
-  <dt>Instant feedback</dt>
-  <dd>Enjoy the best DX (Developer eXperience) and code your app at the speed of thought! Your saved changes to the CSS and JS are reflected instantaneously without refreshing the page. Preserve application state even when you update something in the underlying code!</dd>
+Heroku will follow the `build` command in your `package.json` and compile assets with `webpack.prod.config.js`. It runs the Express web server in `server.js`.
 
-  <dt>Next generation JavaScript</dt>
-  <dd>Use template strings, object destructuring, arrow functions, JSX syntax and more, today.</dd>
+If you're unfamiliar with Heroku deployment (or just need a refresher), they have a really great walkthrough [here](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction).
 
-  <dt>Component Specific Styles</dt>
-  <dd>Separate styles for each component. Style in the good old scss way but still keep it abstracted for each component.</dd>
+## Running on Glitch
 
-  <dt>Industry-standard routing</dt>
-  <dd>It's natural to want to add pages (e.g. `/about`) to your application, and routing makes this possible.</dd>
-
-  <dt>Predictable state management</dt>
-  <dd>Unidirectional data flow allows for change logging and time travel debugging.</dd>
-
-  <dt>SEO</dt>
-  <dd>We support SEO (document head tags management) for search engines that support indexing of JavaScript content. (eg. Google)</dd>
-</dl>
-
-But wait... there's more!
-
-  - *The best test setup:* Automatically guarantee code quality and non-breaking
-    changes. (Seen a react app with 99% test coverage before?)
-  - *The fastest fonts:* Say goodbye to vacant text.
-  - *Stay fast*: Profile your app's performance from the comfort of your command
-    line!
-  - *Catch problems:* TravisCI setup included by default, so your
-    tests get run automatically on each code push.
-
-
-## Quick start
-
-1. Clone this repo using `git clone https://github.com/flexdinesh/react-redux-boilerplate.git`
-2. Move to the appropriate directory: `cd react-redux-boilerplate`.<br />
-3. Run `yarn` or `npm install` to install dependencies.<br />
-4. Run `npm start` to see the example app at `http://localhost:3000`.
-
-Now you're ready build your beautiful React Application!
-
-
-## Info
-
-These are the things I stripped out from [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate) - _github project rules, ngrok tunneling, shjs, service worker, webpack dll plugin, i18n, styled-components, code generators and a few more._
-
-
-## License
-
-MIT license, Copyright (c) 2018 Dinesh Pandiyan.
+1. Go to https://glitch.com/edit/#!/horizons-hackathon-react and click
+  `Remix this 🎤`
+1. Click `Show` at the top to preview your app!
