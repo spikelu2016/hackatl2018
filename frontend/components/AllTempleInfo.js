@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from "react-dom";
+import PropTypes from 'prop-types';
 import { Card, Image, Rating } from 'semantic-ui-react'
 import { compose, withProps } from "recompose";
 import {
@@ -33,14 +34,10 @@ const GoogleMapConstructor = compose(
 class AllTempleInfo extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      tempInfo: [{
-        name: "White Horse Temple",
-        location: "Luoyang, Henan, China",
-        image: "https://upload.wikimedia.org/wikipedia/commons/f/f5/%E6%B4%9B%E9%98%B3%E7%99%BD%E9%A9%AC%E5%AF%BA%E9%BD%90%E4%BA%91%E5%A1%94.jpg",
-        description: "White Horse Temple is, according to tradition, the first Buddhist temple in China, established in 68 AD under the patronage of Emperor Ming in the Eastern Han dynasty capital Luoyang."
-      }]
-    }
+  }
+
+  details() {
+    this.props.history.push('/details');
   }
 
   render() {
@@ -61,7 +58,7 @@ class AllTempleInfo extends React.Component {
     </div>
     <div style={{display: "flex", margin: "15px 120px"}}>
       <div style={{display: "inline-block", width: "33.3%"}}>
-          <Card style={{margin: "5px auto"}}>
+          <Card style={{margin: "5px auto"}} onClick={() => this.details()}>
             <Image src="https://upload.wikimedia.org/wikipedia/commons/f/f5/%E6%B4%9B%E9%98%B3%E7%99%BD%E9%A9%AC%E5%AF%BA%E9%BD%90%E4%BA%91%E5%A1%94.jpg" />
             <Card.Content>
             <Card.Header>White Horse Temple</Card.Header>

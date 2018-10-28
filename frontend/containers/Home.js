@@ -14,7 +14,7 @@ class Home extends React.Component {
     return (
         <div>
           <Banner />
-          <AllTempleInfo />
+          <AllTempleInfo history={this.props.history}/>
         </div>
     );
   }
