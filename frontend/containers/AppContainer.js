@@ -1,20 +1,22 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import Routes from './Routes.js';
+import { BrowserRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
-import LoginContainer from '../components/LoginContainer';
-import SignupContainer from '../components/SignupContainer';
-import TempleDetailsContainer from '../components/TempleDetailsContainer';
-import Banner from '../components/Banner';
 
+class AppContainer extends React.Component {
+  constructor(props) {
+    super(props);
+  }
 
-
-const AppContainer = ({}) => {
+  render() {
     return (
-        <div>
-            <Banner />
-        </div>
+        <BrowserRouter>
+          <Routes />
+        </BrowserRouter>
     );
-};
+  }
+}
 
 AppContainer.propTypes = {
 };

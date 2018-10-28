@@ -1,7 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const LoginContainer = () => {
+class Login extends React.Component{
+  constructor(props) {
+    super(props);
+  }
+
+  signup() {
+    this.props.history.push('/')
+  }
+
+  home() {
+    this.props.history.push('/home')
+  }
+
+  render() {
     return (
       <div className="main-container-bg-pic">
         <div className="main-container-overlay">
@@ -18,7 +31,7 @@ const LoginContainer = () => {
                 type="password"
                 className="login-password"
                 placeholder="password"/>
-              <div
+              <div onClick={() => this.home()}
                 type="button"
                 className="login-button">
                 Log In
@@ -30,7 +43,7 @@ const LoginContainer = () => {
               <div
                 className="login-signup-account">
                 Don't have an account?&nbsp;
-                <span
+                <span onClick={() => this.signup()}
                   className="login-signup-text">
                 Sign up
                 </span>
@@ -40,6 +53,8 @@ const LoginContainer = () => {
         </div>
       </div>
     );
-};
+  }
+}
 
-export default LoginContainer;
+
+export default Login;

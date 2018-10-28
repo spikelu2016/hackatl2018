@@ -1,7 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Signup = () => {
+class Signup extends React.Component{
+  constructor(props) {
+    super(props);
+  }
+
+  login() {
+    this.props.history.push('/login')
+  }
+
+  render() {
     return (
       <div className="main-container-bg-pic">
         <div className="main-container-overlay">
@@ -38,7 +47,7 @@ const Signup = () => {
                 className="signup-login-account">
                 Have an account?&nbsp;
                 <span
-                  onClick={() => this.redirectLogin()}
+                  onClick={() => this.login()}
                   className="signup-login-text">
                 Log In
                 </span>
@@ -48,6 +57,8 @@ const Signup = () => {
         </div>
       </div>
     );
-};
+  }
+}
+
 
 export default Signup;

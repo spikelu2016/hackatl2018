@@ -16,9 +16,9 @@ const Banner = ( {} ) => {
               </div>
             </div>
             <div className="banner-menu">
-              <div className="banner-menu-item">
-                Home
-              </div>
+                <div className="banner-menu-item">
+                  Home
+                </div>
               <div className="banner-menu-item">
                 Discover
               </div>
