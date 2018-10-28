@@ -11,7 +11,7 @@ import Banner from '../components/Banner';
 const AppContainer = ({}) => {
     return (
         <div>
-            <Banner />
+            <TempleDetailsContainer />
         </div>
     );
 };

@@ -7,6 +7,7 @@ import './assets/stylesheets/base.scss';
 import './assets/stylesheets/login.scss';
 import './assets/stylesheets/banner.scss';
 import './assets/stylesheets/signup.scss';
+import './assets/stylesheets/temple.scss';
 
 const store = configureStore();
 
